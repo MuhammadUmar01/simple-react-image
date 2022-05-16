@@ -1,0 +1,45 @@
+{
+  "name": "simple-react-image",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "private": false,
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "rollup-watch": "rollup -c -w",
+    "build": "npm run prebuild && rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "rollup"
+  ],
+  "author": "Muhammad Umar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.67.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.5.5",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
