@@ -35,6 +35,7 @@ const ReactImage: React.FC<ImageProps> = (props) => {
   const cloned = { ...props };
   delete cloned.src;
   delete cloned.alt;
+  delete cloned.onStateChange;
   return (
     <img
       src={error ? errorImage : loaded ? props.src : fallback}

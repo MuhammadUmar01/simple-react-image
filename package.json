@@ -1,6 +1,6 @@
 {
   "name": "simple-react-image",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple React Image is <img> tag of react to gracefully manage large and broken images",
   "repository": {
     "url": "https://github.com/MuhammadUmar01/simple-react-image.git"

@@ -12,8 +12,6 @@ or,
 yarn add simple-react-image
 ```
 
-[Check Demo](https://codesandbox.io/s/jolly-goodall-isx64t)
-
 | Prop            | type     | desciption                     | required |
 | --------------- | -------- | ------------------------------ | -------- |
 | `fallback`      | string   | loading image                  | `no`     |
@@ -41,3 +39,7 @@ import { Image as Img } from 'simple-react-image';
     />
 
 ```
+
+## Demo
+
+[Check Demo here](https://codesandbox.io/s/jolly-goodall-isx64t)
