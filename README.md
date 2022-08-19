@@ -12,28 +12,32 @@ or,
 yarn add simple-react-image
 ```
 
-| Prop         | type   | desciption     | required |
-| ------------ | ------ | -------------- | -------- |
-| `fallback`   | string | loading image  | `no`     |
-| `errorImage` | string | image on error | `no`     |
+[Check Demo](https://codesandbox.io/s/jolly-goodall-isx64t)
+
+| Prop            | type     | desciption                     | required |
+| --------------- | -------- | ------------------------------ | -------- |
+| `fallback`      | string   | loading image                  | `no`     |
+| `errorImage`    | string   | image on error                 | `no`     |
+| `onStateChange` | function | called on loading state change | `no`     |
 
 `all img tags props`
 
 ## Usage
 
 ```jsx
-import { Image } from 'simple-react-image';
+import { Image as Img } from 'simple-react-image';
 
-  <Image
+  <Img
     src={"https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg"}
     />
 
-  <Image
+  <Img
     src={"https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg"}
     fallback="loading image url"
     errorImage='image displyed on error'
+    onStateChange={(state)=>{
+      console.log(state)
+    }}
     />
 
 ```
-
-[Check Demo](https://codesandbox.io/s/jolly-goodall-isx64t)
