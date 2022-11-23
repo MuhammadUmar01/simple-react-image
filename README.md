@@ -1,5 +1,7 @@
 `simple-react-image` is a React Components of `<img>` to Gracefully Loading Large Images. additionally it accepts two optional props fallback and errorImage. fallback will be displayed when image will be loading and errorImage will be displyed when any error happend while loading image
 
+![demo image](https://raw.githubusercontent.com/MuhammadUmar01/simple-react-image/main/src/static/simple_react_image.gif)
+
 ## Install
 
 ```bash
